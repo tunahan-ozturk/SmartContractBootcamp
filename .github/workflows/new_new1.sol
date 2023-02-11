@@ -13,7 +13,7 @@ contract Inbox { // gelen kutusu kontratı tanımladık
     }
 
     function getMessage() public view returns(string){  // gösterimi sağlayacak fonksiyon, returns sadece view veya constant olarak işaretlenen fonksiyonlarda kullanılacaktır.
-        return message;
+        return message;                                 // Yukarıda string public message olarak bir değişken tanımladığımız için getMessage fonks. gereksizdir.
     }
 }
 
