@@ -23,3 +23,16 @@ contract Inbox { // gelen kutusu kontratı tanımladık
 // view : veriyi değiştirecek misin yoksa sadece görüntüleyecek misin bunun için kullanılır, aynı zamanda constant kelimesi de kullanılabilir.
 // pure: verilerin değiştirilemeyeceği aynı zamanda erişim de sağlanayamayacağını belirtir.
 // payable: bu değişkeni kullanarak sözleşmeye para göndermeye çalışabileceğimizi gösterir
+
+
+//example
+contract Immutable {
+    // coding convention to uppercase constant variables
+    address public immutable MY_ADDRESS;
+    uint public immutable MY_UINT;
+
+    constructor(uint _myUint) {
+        MY_ADDRESS = msg.sender;
+        MY_UINT = _myUint;
+    }
+}
