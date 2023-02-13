@@ -26,6 +26,7 @@ contract Inbox { // gelen kutusu kontratı tanımladık
 
 
 //example
+// immutable örneği
 contract Immutable {
     // coding convention to uppercase constant variables
     address public immutable MY_ADDRESS;
